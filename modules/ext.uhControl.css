@@ -1,0 +1,33 @@
+p {
+	margin: 10px 0 20px 0;
+}
+.uhEntry {
+	border: 1px solid #cccccc;
+	border-top: 0;
+	padding: 5px 10px;
+}
+.uhEntry.none,
+.uhEntry:first-child {
+	border-top: 1px solid #cccccc;
+}
+.uhEntry.removeAll {
+	cursor: pointer;
+}
+.uhEntry i {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 10px 0 0;
+	text-align: center;
+	cursor: pointer;
+	background: url('uhSprite.png') no-repeat 0 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.uhEntry:not(.none):hover {
+	background: #f0f0f0;
+}
+.uhEntry:hover i {
+	background-position: -20px 0;
+}
